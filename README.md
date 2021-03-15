@@ -3,19 +3,20 @@ Computer vision that finds the distance of a point from an edge using sobel edge
 
 For the caMicroscope GSoC 2021 Project Choice [2] Pathology Smartpens Code Challenge
 
+# Personal Background Knowledge
 For background, I took the course CSE 455 Computer Vision at the University of Washington, 
 and in this course I implemented my own miniature computer vision library. One of the
 filters I implemented was the sobel operator for edge detection.
 
-For this challenge, I added an additional function to my source code called *get_smallest_dist_from_edge*,
-which you may find in dist-from-edge/src/hw2/filter_image.c
+For this challenge, I added an additional function to my source code called `get_smallest_dist_from_edge`,
+which you may find in `dist-from-edge/src/hw2/filter_image.c`
 
-I added this additional *get_smallest_dist_from_edge* on March 14, 2021.
+I added this additional `get_smallest_dist_from_edge` on March 14, 2021.
 
 If you would like to play around with the code or run some tests yourself, you may clone the
-repository, and (if you are using command line) cd into the repository and compile with *make*.
+repository, and (if you are using command line) cd into the repository and compile with `make`.
 
-I generated the example images with *dist_from_edge.py*
+I generated the example images with `dist_from_edge.py`
 
 # Test Images
 Here is the image I used in my examples:
