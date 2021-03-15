@@ -25,7 +25,7 @@ I generated the example images with `dist_from_edge.py`
 Here is the image I used in my examples:
 ![](dist-from-edge/data/dog.jpg)
 
-In the test images shown below, the sobel edge detection filter has been applied. The test points are denoted
+In the test image results shown below, the sobel edge detection filter has been applied. The test points are denoted
 with the smaller + and the closest edge detected is denoted with a larger cross.
 
 ## Test 1 (point on beam)
@@ -57,3 +57,9 @@ Closest Distance: 7.810250
 Best Edge: (x: 515, y: 126) denoted by large +
 
 ![](dist-from-edge/dist-from-edge-3.jpg)
+
+# Next Steps
+
+- Test more points on current test image.
+- Test greater variety of images.
+- Refine code along the way.
