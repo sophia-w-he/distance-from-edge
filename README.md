@@ -61,5 +61,6 @@ Best Edge: (x: 515, y: 126) denoted by large +
 # Next Steps
 
 - Test more points on current test image.
+- Add noise reduction.
 - Test greater variety of images.
 - Refine code along the way.
