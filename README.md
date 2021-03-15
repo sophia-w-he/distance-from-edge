@@ -1,7 +1,10 @@
 # distance-from-edge
-Computer vision that finds the distance of a point from an edge using sobel edge detection and euclidean distance calculations.
+Computer vision tool that finds the distance of a point from an edge using sobel edge detection and euclidean distance calculations.
 
 For the caMicroscope GSoC 2021 Project Choice [2] Pathology Smartpens Code Challenge
+
+**Code Challenge:** Create a page or tool which performs edge detection on a given image and, given a point, 
+returns the distance from that point to the closest edge.
 
 # Personal Background Knowledge
 For background, I took the course CSE 455 Computer Vision at the University of Washington, 
