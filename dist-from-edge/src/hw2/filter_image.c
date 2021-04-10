@@ -522,6 +522,46 @@ image get_smallest_dist_from_edge(image im, int x, int y)
     
 }
 
+float get_min_dist_edge(image im, int x, int y)
+{
+    image *rst = sobel_image(im);
+    im = rst[0];
+    float min_distance = 99999999;
+    int best_x = 0;
+    int best_y = 0;
+    
+    // loop through images
+    for(int j = 0; j < im.h; ++j) {
+        for(int i = 0; i < im.w; ++i) {
+            // get pixel
+            float pr = get_pixel(rst[0], i, j, 0);
+            // if pixel is greater than threshold
+            if (pr > .10) {
+                // calculate distance between pixel coordinates and x,y
+                float dist = sqrt(pow(i - x, 2) + pow(j - y, 2));
+                // if distance is less than current minimum
+                if (dist < min_distance) {
+                    // and update min_distance and best index as necessary
+                    min_distance = dist;
+                    best_x = i;
+                    best_y = j;
+                }
+                
+            } else {
+            }
+        }
+    }
+    
+    /*printf("\nmin dist \n");
+    printf("%f", min_distance);
+    printf("\nbest edge x \n");
+    printf("%d", best_x);
+    printf("\nbest edge y \n");
+    printf("%d", best_y);
+    printf("\n");*/
+    return min_distance;
+}
+
 // EXTRA CREDITS BELOW
 int compare_float(const void * a, const void * b)
 {

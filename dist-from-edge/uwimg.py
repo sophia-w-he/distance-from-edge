@@ -268,3 +268,7 @@ if __name__ == "__main__":
 get_smallest_dist_from_edge = lib.get_smallest_dist_from_edge
 get_smallest_dist_from_edge.argtypes = [IMAGE, c_int, c_int]
 get_smallest_dist_from_edge.restype = IMAGE
+
+get_min_dist_edge = lib.get_min_dist_edge
+get_min_dist_edge.argtypes = [IMAGE, c_int, c_int]
+get_min_dist_edge.restype = c_float
