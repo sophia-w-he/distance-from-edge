@@ -21,12 +21,29 @@ repository, and (if you are using command line) cd into the repository and compi
 
 I generated the example images with `dist_from_edge.py`
 
-# Test Images
+# Test Image
 Here is the image I used in my examples:
 ![](dist-from-edge/data/dog.jpg)
 
 In the test image results shown below, the sobel edge detection filter has been applied. The test points are denoted
 with the smaller + and the closest edge detected is denoted with a larger cross.
+
+# User Interface
+If you would like to try the tool out for yourself, make sure you have flask and flask-cors installed.
+
+- `pip install flask`
+
+- `pip install -U flask-cors`
+
+Navigate to `/dist-from-edge` and run the backend, which will allow the page to communicate with the Python library to call the function.
+
+- `export FLASK_APP=distedge.py`
+
+- `python -m flask run`
+
+Now, you may open the page `/dist-from-edge/index.html` in your browser. 
+
+**Page Instructions:** click on a point anywhere on the test image. There will be an alert which notifies the minimum distance from the closest edge, and the closest edge from the point you clicked will be shown in the result image.
 
 ## Test 1 (point on beam)
 
