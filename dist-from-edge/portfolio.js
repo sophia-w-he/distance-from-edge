@@ -47,7 +47,7 @@
       dataType: "text",
       success: function(response) {
           refreshImage('result-image', "dist-from-edge-test.jpg");
-          alert("The minimum distance from closest edge is " + response);
+          alert("The minimum distance from your point to the closest edge is " + response);
           /*let resultImage = document.getElementById('result-image');
           console.log(resultImage)
           resultImage.src = "dist-from-edge-test.jpg";*/
@@ -58,7 +58,7 @@
     alert( "Error" );
     })
     .always(function() {
-      alert( "Finished! See results below" );
+      alert( "Finished! See results below." );
     });
   }
 
