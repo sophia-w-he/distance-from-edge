@@ -80,4 +80,4 @@ Best Edge: (x: 515, y: 126) denoted by large +
 - Test more points on current test image.
 - Add noise reduction.
 - Test greater variety of images.
-- Refine code along the way.
+- Refine algorithm along the way.
