@@ -16,9 +16,6 @@ which you may find in `dist-from-edge/src/hw2/filter_image.c`
 
 I added this additional `get_smallest_dist_from_edge` on March 14, 2021.
 
-If you would like to play around with the code or run some tests yourself, you may clone the
-repository, and (if you are using command line) cd into the repository and compile with `make`.
-
 I generated the example images with `dist_from_edge.py`
 
 # Test Image
@@ -80,4 +77,4 @@ Best Edge: (x: 515, y: 126) denoted by large +
 - Test more points on current test image.
 - Add noise reduction.
 - Test greater variety of images.
-- Refine algorithm along the way.
+
